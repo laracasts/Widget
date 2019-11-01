@@ -1,0 +1,43 @@
+{
+    "name": "laracasts/widget",
+    "description": "Simple view widgets.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeffrey Way",
+            "email": "jeffrey@laracasts.com",
+            "homepage": "https://laracasts.com"
+        }
+    ],
+    "homepage": "https://github.com/laracasts/widget",
+    "keywords": ["Laravel", "Widget"],
+    "require": {
+        "illuminate/support": "~5|~6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laracasts\\Widget\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laracasts\\Widget\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laracasts\\Widget\\WidgetServiceProvider"
+            ],
+            "aliases": {
+                "Widget": "Laracasts\\Widget\\Facades\\Widget"
+            }
+        }
+    }
+}
